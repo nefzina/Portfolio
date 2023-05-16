@@ -1,1 +1,3 @@
 # Portfolio
+In progess ...
+This is my personal portfolio where you find information about me and the details about my project.
