@@ -1,0 +1,57 @@
+#root {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 5rem;
+  box-sizing: border-box;
+}
+.onDisplay {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+  color: #013743;
+}
+
+.onDisplay > .wrapper > h1 {
+  font-size: clamp(0.5em, 8vw, 1em);
+  line-height: 1.2;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex > h2 {
+  width: fit-content;
+  font-size: clamp(0.2em, 8vw, 0.4em);
+  display: inline-block;
+  margin: 0 0 0 20px;
+  vertical-align: middle;
+}
+
+#portfolio {
+  text-decoration: none;
+  color: #013743;
+  animation-name: portfolio;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes portfolio {
+  50% {
+    opacity: 0;
+  }
+}
+
+.notDisplayed {
+  display: none;
+}

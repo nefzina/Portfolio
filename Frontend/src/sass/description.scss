@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+.description {
+  padding-top: 150px;
+  font-size: 5rem;
+  color: $font;
+  background-color: $primary-blue-background;
+  height: 100vh;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: clamp(0.5em, 8vw, 1em);
+    margin-left: clamp(20px, 6vw, 40px);
+  }
+  h2 {
+    font-size: clamp(0.2em, 8vw, 0.4em);
+    margin-left: clamp(20px, 6vw, 40px);
+  }
+  #progressBar {
+    width: clamp(250px, 10vw, 330px);
+    height: 30px;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    border-radius: 40px;
+    margin: 130px auto 0;
+    position: relative;
+  }
+  #progressBar::after {
+    width: 5%;
+    height: 30px;
+    border: none;
+    content: "";
+    background: linear-gradient(135deg, #066366, #2f055f);
+    border-radius: 40px;
+    position: absolute;
+    animation: progress 2s linear forwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes progress {
+    100% {
+      width: 90%;
+    }
+  }
+
+  p {
+    font-size: 0.3em;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
