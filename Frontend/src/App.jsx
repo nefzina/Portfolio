@@ -13,8 +13,8 @@ function App() {
         <div className={displayed ? "onDisplay" : "notDisplayed"}>
           <div className="wrapper">
             <h1>
-              Bonjour,
-              <br /> c&apos;est Amani
+              Hello,
+              <br /> I&apos;m Amani
             </h1>
             <div className="flex">
               <img src={arrow} alt="arrow" />
