@@ -16,6 +16,25 @@
     font-size: clamp(0.2em, 8vw, 0.4em);
     margin-left: clamp(20px, 6vw, 40px);
   }
+  p {
+    font-size: clamp(0.1em, 5vw, 0.28em);
+    margin-left: clamp(20px, 6vw, 40px);
+  }
+
+  .fa-paper-plane {
+    width: 40px;
+    color: #f2f6fd;
+    animation: fly 10s ease-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+
+  @keyframes fly {
+    0% {transform: translate(-50px, 100px);}
+    20% {rotate: 10deg; }
+    50% { rotate: -5deg; translate: 150px; }
+    100% {rotate: -5deg; transform: translate(110vw, -50px); }
+  }
   #progressBar {
     width: clamp(250px, 10vw, 330px);
     height: 30px;
@@ -43,7 +62,7 @@
     }
   }
 
-  p {
+  #progress {
     font-size: 0.3em;
     width: fit-content;
     margin: 0 auto;
